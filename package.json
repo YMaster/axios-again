@@ -1,0 +1,38 @@
+{
+  "name": "axios-again",
+  "version": "0.1.0",
+  "description": "axios request again",
+  "main": "./dist/umd/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/es/index.d.ts",
+  "scripts": {
+    "build:umd": "cross-env BUILD_TYPE=umd webpack",
+    "build:umd2": "cross-env BUILD_TYPE=umd2 webpack",
+    "build:amd": "cross-env BUILD_TYPE=amd webpack",
+    "build:commonjs": "cross-env BUILD_TYPE=commonjs webpack",
+    "build:commonjs2": "cross-env BUILD_TYPE=commonjs2 webpack",
+    "build:tsc": "tsc",
+    "build": "npm run build:umd && npm run build:umd2 && npm run build:amd && npm run build:commonjs && npm run build:commonjs2 && npm run build:tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "YM",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "is-retry-allowed": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@types/axios": "^0.14.0",
+    "@types/node": "^13.7.7",
+    "babel-loader": "^8.0.6",
+    "gts": "^1.1.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
+}

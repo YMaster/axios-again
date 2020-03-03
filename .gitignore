@@ -1,0 +1,10 @@
+node_modules
+build/
+dist/
+coverage/
+package-lock.json
+yarn.lock
+yarn-error.json
+.vs
+.code
+.vscode
